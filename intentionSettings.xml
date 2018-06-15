@@ -1,0 +1,5 @@
+<application>
+  <component name="IntentionManagerSettings">
+    <ignoreAction name="Lua/Remove call paren" />
+  </component>
+</application>
