@@ -2,6 +2,8 @@
   <component name="ParameterNameHintsSettings">
     <blacklists>
       <blacklist language="Java" />
+      <blacklist language="Groovy" />
+      <blacklist language="Kotlin" />
     </blacklists>
     <option id="lua.hints.show_local_var_type" value="true" />
     <option id="lua.hints.show_function_type" value="true" />
