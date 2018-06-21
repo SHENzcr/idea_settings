@@ -1,8 +1,8 @@
 <application>
   <component name="UISettings">
     <option name="FONT_FACE" value=".SFNSText-Regular" />
-    <option name="FONT_SCALE" value="1.0" />
     <option name="HIDE_TOOL_STRIPES" value="false" />
     <option name="MAX_LOOKUP_WIDTH2" value="878" />
+    <option name="PRESENTATION_MODE_FONT_SIZE" value="26" />
   </component>
 </application>
