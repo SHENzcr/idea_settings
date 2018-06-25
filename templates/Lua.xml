@@ -16,7 +16,7 @@
       <option name="LUA_IF" value="false" />
     </context>
   </template>
-  <template name="uimain" value="local gameUI = gameUI&#10;local gameUILayerWindow =require(&quot;game.core.gameUILayerWindow&quot;)&#10;---@class $CLASSNAME$&#10;local $CLASSNAME$ = class(&quot;$CLASSNAME$&quot;,gameUILayerWindow)&#10;&#10;function $CLASSNAME$:OnDestory()&#10;    $CLASSNAME$.super.OnDestory(self)&#10;end&#10;&#10;function $CLASSNAME$:awake()&#10;    $CLASSNAME$.super.awake(self)&#10;    self:bindUI(self._uiObject)&#10;    &#10;    self:onRefresh()&#10;end&#10;&#10;function $CLASSNAME$:onRefresh()&#10;&#10;end&#10;&#10;return $CLASSNAME$" description="ui main lua file" toReformat="false" toShortenFQNames="true">
+  <template name="uimain" value="local gameUI = gameUI&#10;local gameUILayerWindow =require(&quot;game.core.gameUILayerWindow&quot;)&#10;---@class $CLASSNAME$&#10;local $CLASSNAME$ = class(&quot;$CLASSNAME$&quot;,gameUILayerWindow)&#10;gameUI.Init($CLASSNAME$)&#10;&#10;&#10;function $CLASSNAME$:OnDestory()&#10;    $CLASSNAME$.super.OnDestory(self)&#10;end&#10;&#10;function $CLASSNAME$:awake()&#10;    $CLASSNAME$.super.awake(self)&#10;    self:bindUI(self._uiObject)&#10;    &#10;    self:onRefresh()&#10;end&#10;&#10;function $CLASSNAME$:onRefresh()&#10;&#10;end&#10;&#10;return $CLASSNAME$" description="ui main lua file" toReformat="false" toShortenFQNames="true">
     <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
