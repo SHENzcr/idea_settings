@@ -41,6 +41,9 @@
   <action id="EditorToggleColumnMode">
     <keyboard-shortcut first-keystroke="shift meta l" />
   </action>
+  <action id="EditorUp">
+    <keyboard-shortcut first-keystroke="up" />
+  </action>
   <action id="EvaluateExpression" />
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.TogglePathShowing" />
@@ -139,4 +142,7 @@
   <action id="XDebugger.JumpToSource" />
   <action id="XDebugger.SetValue" />
   <action id="openAssertEqualsDiff" />
+  <action id="osmedile.intellij.stringmanip.ToUpperCaseAction">
+    <keyboard-shortcut first-keystroke="ctrl p" />
+  </action>
 </keymap>
