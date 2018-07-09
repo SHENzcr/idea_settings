@@ -26,10 +26,12 @@
   <action id="EditorAddOrRemoveCaret">
     <mouse-shortcut keystroke="meta button1" />
   </action>
+  <action id="EditorChooseLookupItemReplace" />
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="EditorDuplicate" />
+  <action id="EditorTab" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta end" />
     <keyboard-shortcut first-keystroke="meta down" />
