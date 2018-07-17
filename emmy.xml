@@ -3,4 +3,7 @@
     <option name="luaCheck" value="/usr/local/bin/luacheck" />
     <option name="luaCheckArgs" value="-g" />
   </component>
+  <component name="LuaSettings">
+    <option name="showWordsInFile" value="false" />
+  </component>
 </application>
