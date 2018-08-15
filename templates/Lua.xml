@@ -62,7 +62,7 @@
     </context>
   </template>
   <template name="Focus" value="function $CLASSNAME$:onFocus()&#10;    if $CLASSNAME$.super.onFocus then&#10;        $CLASSNAME$.super.onFocus(self)&#10;    end&#10;    self:setVisible(true) &#10;end&#10;&#10;function $CLASSNAME$:onLoseFocus()&#10;    self:setVisible(false) &#10;end" description="function" toReformat="false" toShortenFQNames="true">
-    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="LUA_CODE" value="true" />
     </context>
