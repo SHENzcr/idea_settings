@@ -4,6 +4,9 @@
     <option name="luaCheckArgs" value="-g" />
   </component>
   <component name="LuaSettings">
+    <option name="dotCompleteAsColon" value="true" />
+    <option name="languageLevel" value="Lua 5.1" />
+    <option name="mobdebugConnectPause" value="false" />
     <option name="showWordsInFile" value="false" />
   </component>
 </application>
