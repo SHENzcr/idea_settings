@@ -1,0 +1,12 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="OpenFileInConsole" is_action="true" action_type="1" position="1">
+      <path value="root" />
+      <path value="Main Toolbar" />
+      <path value="Toolbar Run Actions" />
+      <path value="Toolbar Make Actions" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+    <action id="OpenFileInConsole" icon="$USER_HOME$/Desktop/EmmyLua/lib/EmmyLua-1.2.20180903/icons/Unity.png" />
+  </component>
+</application>
