@@ -72,4 +72,10 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
+  <template name="tickTime" value="self.m_endTime = 0&#10;self:_tickTime()&#10;self:schedule(handler(self,self._tickTime),1)&#10; &#10;function $CLASSNAME$:_tickTime()&#10;    local curTime = g_getServerTime()&#10;    local diff = self.m_endTime - curTime&#10;    if diff &lt; 0 then diff = 0 end&#10;    self.c_textTime.Text.text = g_format_needTimeZYZ(diff)&#10;end   " description="lua function" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
