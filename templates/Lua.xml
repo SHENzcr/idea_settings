@@ -78,4 +78,10 @@
       <option name="LUA_CODE" value="true" />
     </context>
   </template>
+  <template name="instance" value="local rx = require(&quot;game.tools.rx&quot;)&#10;---@class $CLASSNAME$&#10;cc.exports.$CLASSNAME$ = class(&quot;$CLASSNAME$&quot;)&#10;local shareInstance = nil&#10;&#10;function $CLASSNAME$:ctor()&#10;end&#10;&#10;function $CLASSNAME$:getInstance()&#10;    if not shareInstance then&#10;        shareInstance = $CLASSNAME$:new()&#10;    end&#10;    return shareInstance&#10;end&#10;&#10;function $CLASSNAME$:destroyInstance()&#10;    if shareInstance then&#10;        shareInstance:delete()&#10;        shareInstance = nil&#10;    end&#10;end&#10;&#10;function $CLASSNAME$:delete()&#10;    ServerMsgListener:unregisterAll(self)&#10;    shareInstance = nil&#10;end" description="Manager_Instance" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="LUA_CODE" value="true" />
+    </context>
+  </template>
 </templateSet>
